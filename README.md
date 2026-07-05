@@ -119,11 +119,6 @@ A continuación se muestra la librería en acción bloqueando datos inválidos y
 ![Capturar datos](img/captura_login.png)
 *Figura 1: Captura de datos en el formulario.*
 
-![Capturar datos](img/login_correcto.png)
-*Figura 1: Captura de datos en el formulario.*
-
-![Capturar datos](img/correo_incorrecto.png)
-*Figura 1: Captura de datos en el formulario.*
 
 ![Capturar datos](img/error_contraseña.png)
 *Figura 1: Captura de datos en el formulario.*
