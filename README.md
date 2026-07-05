@@ -1,4 +1,4 @@
-# Librería de Validaciones JS
+# Librería Utilería .JS
 
 ### TECNOLÓGICO NACIONAL DE MÉXICO/
 ### INTITUTO TECNOLÓGICO DE OAXACA
