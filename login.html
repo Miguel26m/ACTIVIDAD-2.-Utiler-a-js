@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+    <h2>Iniciar sesión</h2>
+    <form id="login">
+        <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+            <div class="instrucciones">Requisitos: Mínimo 8 caracteres, una mayúscula, una minúscula, un número y un carácter especial.</div>
+        </div>
+
+        <button type="submit">Ingresar</button>
+        <button type="button" class="btn-secundario" onclick="window.location.href='index.html'">Ir al formulario</button>
+    </form>
+
+    <script src="js/utileria.js"></script>
+    <script>
+        document.getElementById('login').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const correo = document.getElementById('correo').value;
+            const password = document.getElementById('password').value;
+
+            if (!validarCorreo(correo)) {
+                alert("Por favor, introduce un formato de correo válido.");
+                return;
+            }
+
+            if (!validarPassword(password)) {
+                alert("La contraseña no cumple con los requisitos de seguridad requeridos.");
+                return;
+            }
+
+            alert("¡Login correcto! Las credenciales tienen el formato válido.");
+        });
+    </script>
+</body>
+</html>

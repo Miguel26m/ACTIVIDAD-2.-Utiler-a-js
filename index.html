@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario y Modal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <h2>Registro de usuario</h2>
+    <form id="index">
+        <div class="formul">
+            <label for="nombre">Nombre completo (Solo letras):</label>
+            <input type="text" id="nombre" required>
+        </div>
+
+        <div class="formul">
+            <label for="telefono">Teléfono (10 dígitos exactos):</label>
+            <input type="text" id="telefono" required>
+        </div>
+
+        <div class="formul">
+            <label for="fechaNac">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNac" required>
+        </div>
+
+        <button type="submit">Validar y Procesar</button>
+        <button type="button" onclick="window.location.href='login.html'">Ir al login</button>
+    </form>
+
+    <dialog id="miModal">
+        <h3>Resultado del Cálculo</h3>
+        <p id="modalMensaje"></p>
+        <button id="closeModal">Cerrar</button>
+    </dialog>
+
+    <script src="js/utileria.js"></script>
+    <script>
+        const form = document.getElementById('index');
+        const modal = document.getElementById('miModal');
+        const cerrar = document.getElementById('closeModal');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let nombreVal = capitalizarNombres(document.getElementById('nombre').value);
+            let telVal = document.getElementById('telefono').value;
+            let fechaVal = document.getElementById('fechaNac').value;
+
+            if (!soloLetras(nombreVal)) {
+                alert("Error: El nombre solo debe contener letras.");
+                return;
+            }
+
+            if (!validarLongitud(telVal, 10)) {
+                alert("Error: El teléfono debe tener exactamente 10 dígitos.");
+                return;
+            }
+            if (!validarFechaLogica(fechaVal)) {
+                alert("Error: La fecha de nacimiento ingresada no es lógica.");
+                return;
+            }
+
+            if (!esMayorDeEdad(fechaVal)) {
+                alert("Error: Debes ser mayor de edad (18+ años) para registrarte.");
+                return;
+            }
+
+            const edadCalculada = calcularEdad(fechaVal);
+
+            document.getElementById('modalMensaje').innerHTML = `
+                ¡Validación exitosa!<br><br>
+                <strong>Nombre:</strong> ${nombreVal}<br>
+                <strong>Teléfono:</strong> ${telVal}<br>
+                <strong>Edad Calculada:</strong> ${edadCalculada} años.
+            `;
+
+            modal.showModal();
+        });
+
+        cerrar.addEventListener('click', () => modal.close());
+    </script>
+</body>
+</html>
