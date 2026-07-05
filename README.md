@@ -105,12 +105,12 @@ A continuación se muestra la librería en acción bloqueando datos inválidos y
 
 ### Formulario
 
-![Consola mostrando validación exitosa](img/modal_correcto.png)
+![Consola mostrando validación exitosa](img/modal_consola.png)
 *Figura 1: La interfaz muestra el modal de éxito de captura de datos y la consola muestra que todo se guardo correctamente*
 
 ### Login
 
-![Capturar datos](img/login_correcto.png)
+![Capturar datos](img/login_correct.png)
 *Figura 2: La consola muestra que los datos son validos.*
 
 
