@@ -36,14 +36,6 @@ label {
     color: #333;
 }
 
-input { 
-    padding: 10px; 
-    width: 250px; 
-    border: 1px solid #ccc;
-    border-radius: 6px; 
-    box-sizing: border-box; 
-}
-
 button { 
     padding: 12px 20px; 
     background: #007BFF; 
@@ -59,11 +51,20 @@ button:hover {
     background-color: #28a745; 
 }
 
+input { 
+    padding: 10px; 
+    width: 100%;         
+    max-width: 300px;      
+    border: 1px solid #ccc;
+    border-radius: 6px; 
+    box-sizing: border-box; 
+}
+
 .instrucciones { 
     font-size: 0.85em; 
     color: #666; 
     margin-top: 8px; 
-    max-width: 250px;
+    max-width: 300px;    
 }
         
 dialog { 
@@ -71,11 +72,28 @@ dialog {
     border-radius: 12px; 
     border: none; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    width: 300px; 
+    width: 90%;            
+    max-width: 400px;     
     text-align: center; 
 }
         
 dialog::backdrop { 
     background: rgba(0,0,0,0.6); 
     backdrop-filter: blur(3px); 
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        padding: 20px;
+        width: 95%;        /* Formulario casi a pantalla completa en móviles */
+    }
+
+    button {
+        width: 100%;       /* Botones grandes para tocar con el dedo */
+        margin-bottom: 10px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
 }
