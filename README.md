@@ -23,3 +23,6 @@ La librería no requiere dependencias externas ni frameworks. Para implementarla
 
 ```html
 <script src="js/utileria.js"></script>
+
+## Formato de nombres
+Corrige los errores de formato del usuario, ideal para guardar nombres presentables en bases de datos.
