@@ -1,9 +1,9 @@
 # Librería de Validaciones JS
 
-### TECNOLÓGICO NACIONAL DE MEXICO/
+### TECNOLÓGICO NACIONAL DE MÉXICO/
 ### INTITUTO TECNOLÓGICO DE OAXACA
 
-#### Estudiante: Macuixtle Gaytan Miguel Angel
+#### Estudiante: Macuixtle Gaytán Miguel Angel
 #### Materia: Programación Web
 #### Docente: Martinez Nieto Adelina
 #### Unidad: 2
@@ -113,4 +113,7 @@ A continuación se muestra la librería en acción bloqueando datos inválidos y
 ![Capturar datos](img/login_correct.png)
 *Figura 2: La consola muestra que los datos son validos.*
 
+---
+## Video promocional
 
+link del video en Drive: 
