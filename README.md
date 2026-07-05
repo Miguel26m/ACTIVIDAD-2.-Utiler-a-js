@@ -116,4 +116,4 @@ A continuación se muestra la librería en acción bloqueando datos inválidos y
 ---
 ## Video promocional
 
-link del video en Drive: 
+link del video en Drive:
