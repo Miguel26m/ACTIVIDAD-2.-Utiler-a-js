@@ -98,3 +98,13 @@ let entrada = "miguel angel macuixtle";
 let nombreLimpio = capitalizarNombres(entrada);
 console.log(nombreLimpio); // "Miguel Angel Macuixtle"
 ```
+---
+## Capturas de pantalla (Evidencia)
+
+A continuación se muestra la librería en acción bloqueando datos inválidos y procesando un registro exitoso:
+
+![Error de fecha ilógica](img/error_fecha.png)
+*Figura 1: El sistema detiene el proceso al detectar una fecha de nacimiento ilógica o un error en los datos.*
+
+![Consola mostrando validación exitosa](img/captura-exito.png)
+*Figura 2: La interfaz muestra el modal de éxito con los datos limpios y la edad calculada correctamente.*
