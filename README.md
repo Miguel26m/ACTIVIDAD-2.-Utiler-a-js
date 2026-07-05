@@ -105,21 +105,12 @@ A continuación se muestra la librería en acción bloqueando datos inválidos y
 
 ### Formulario
 
-![Capturar datos](img/captura_datos.png)
-*Figura 1: Captura de datos en el formulario.*
-
 ![Consola mostrando validación exitosa](img/modal_correcto.png)
-*Figura 2: La interfaz muestra el modal de éxito con los datos limpios y la edad calculada correctamente.*
-
-![Error de fecha ilógica](img/error_fecha.png)
-*Figura 3: El sistema detiene el proceso al detectar una fecha de nacimiento ilógica o un error en los datos.*
+*Figura 1: La interfaz muestra el modal de éxito de captura de datos y la consola muestra que todo se guardo correctamente*
 
 ### Login
 
-![Capturar datos](img/captura_login.png)
-*Figura 1: Captura de datos en el formulario.*
+![Capturar datos](img/login_correcto.png)
+*Figura 2: La consola muestra que los datos son validos.*
 
-
-![Capturar datos](img/error_contraseña.png)
-*Figura 1: Captura de datos en el formulario.*
 
